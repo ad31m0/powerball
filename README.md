@@ -3,20 +3,23 @@
 
 Before starting I researched available solutions please find a set of them below
 
-https://github.com/skbergam/DeveloperCandidatesWhatDoTheyKnowDoTheyKnowThingsLetsFindOut
-https://github.com/MuriloMarquesSantos/power-ball-service
-https://github.com/matheusicaro/codility-exercise-powerball-service
-https://github.com/petry26/powerball
-https://github.com/denissouzasantos/application-powerball-lottery
-https://github.com/rcotter/lottery-ticket
+- https://github.com/skbergam/DeveloperCandidatesWhatDoTheyKnowDoTheyKnowThingsLetsFindOut
+- https://github.com/MuriloMarquesSantos/power-ball-service
+- https://github.com/matheusicaro/codility-exercise-powerball-service
+- https://github.com/petry26/powerball
+- https://github.com/denissouzasantos/application-powerball-lottery
+- https://github.com/rcotter/lottery-ticket
 
 All of them were neat, I tried making mine simpler, hope it meets your standards
 
-Next:
+For docs please visit https://neo-powerball.herokuapp.com/
+
+For a live version please visit https://neo-powerball.herokuapp.com/checkTicket
 
 
 # Problem Description
-# Interview Exercise
+
+## Interview Exercise
 
 Your goal is to extend the functionality of this Node.js service.
 
