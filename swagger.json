@@ -13,7 +13,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "neo-powerball.herokuapp.com:3000",
+  "host": "neo-powerball.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -63,6 +63,9 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "Ok"
+          },
           "405": {
             "description": "Invalid input"
           }
