@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a powerball check service",
+    "version": "1.0.0",
+    "title": "NeoFinancial Powerball!",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "mohmdadel@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/checkTicket": {
+      "post": {
+        "summary": "Checks multiple ticket picks for a win in the powerball",
+        "description": "",
+        "operationId": "checkTicket",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "A draw date for the lottery and picks numbers array",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "name": "object",
+              "required": true,
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "example" : "2021-02-28"
+                },
+                "picks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "example": [
+                    "12 30 59 4 5 1",
+                    "12 30 3 4 5 1",
+                    "12 30 59 65 5 1",
+                    "12 30 59 65 5 16",
+                    "12 30 00 65 69 16"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}
