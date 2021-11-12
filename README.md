@@ -2,15 +2,23 @@
 
 Your goal is to extend the functionality of this Node.js service.
 
-Powerball is a popular US lottery game with draws twice a week. For the purposes of this exercise, a Powerball lottery "ticket" includes the date of the draw and one or more "picks". Each "pick" is a set of 5 integers (from `1`-`69`) along with a 6th integer (the _Powerball_, from `1`-`26`).
+Powerball is a popular US lottery game with draws twice a week.
+For the purposes of this exercise,
+a Powerball lottery "ticket" includes the date of the draw and one or more "picks".
+Each "pick" is a set of 5 integers (from `1`-`69`)
+along with a 6th integer (the _Powerball_, from `1`-`26`).
 
 For example, a pick for the draw on `2017-11-09` might be:
 
 `02 14 19 21 61` `25`
 
-Your application's API will accept data for a lottery ticket, and respond with whether each pick has won, the prize won per-pick, and the total of all prizes won on the ticket. It is up to you to design and build this API.
+Your application's API will accept data for a lottery ticket,
+and respond with whether each pick has won, the prize won per-pick,
+and the total of all prizes won on the ticket.
+It is up to you to design and build this API.
 
-The Powerball winning numbers change on each "draw date". In order to determine a win or a loss, your application will have to retrieve the Powerball draw dates and winning numbers from the following public URL:
+The Powerball winning numbers change on each "draw date".
+In order to determine a win or a loss, your application will have to retrieve the Powerball draw dates and winning numbers from the following public URL:
 
 [https://data.ny.gov/resource/d6yy-54nr.json](https://data.ny.gov/resource/d6yy-54nr.json)
 
@@ -27,10 +35,6 @@ To calculate the prize, consult the prize matrix image below:
 - Follow modern JavaScript and Node best practices and conventions to the best of your ability.
 - You are free to add packages, tools or improvements to your project as you see fit.
 - We expect you to write the kind of feature you would put into production, including tests and documentation as you see fit.
-
-## Download
-
-To checkout the source, you should clone it from GitHub! Don't fork it or other people will be able to see your solution. Instead clone it and then push it to your own private GitHub repo.
 
 ## Installation
 
@@ -94,11 +98,7 @@ You should see output like this:
 
 ## Submission
 
-Make your changes on a branch and then make a PR back to your private repo. That makes it easy for us to review your changes in one place. When you're ready for us to review your solution give these users access to your repo:
-
-- [iansu](https://github.com/iansu)
-
-Please also send an email to engineering@neofinancial.com to let us know that your submission is ready for review, and include any notes or instructions.  
+Make your changes and then create a zip file to send back to us. Make sure you don't include `node_modules` in the zip file. Send your solution back to the person who emailed you the original problem.
 
 ## Contact
 

@@ -1,13 +1,13 @@
 const express = require('express')
-const { root } = require('../controllers/root')
-const { notFound } = require('../controllers/notfound')
+const {checkTicketController} = require("../controllers/check-ticket-controller")
+const {checkTicketSchemaMiddleware} = require("../middleware/check-ticket-schema-middleware")
 
 const router = express.Router()
 
 // Routes
-router.get('/', root)
 
+router.post('/checkTicket', checkTicketSchemaMiddleware, checkTicketController)
 // Fall Through Route
-router.use(notFound)
+
 
 module.exports = router
