@@ -43,7 +43,7 @@
               "properties": {
                 "date": {
                   "type": "string",
-                  "example" : "2021-02-28"
+                  "example" : "2018-02-28"
                 },
                 "picks": {
                   "type": "array",
